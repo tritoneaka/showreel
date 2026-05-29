@@ -11,6 +11,8 @@ html, body {
   width: 100%;
   height: 100%;
   background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -19,26 +21,51 @@ body {
   align-items: center;
 }
 
-.video-container {
+.wrapper {
   width: 90vw;
   max-width: 1400px;
 }
-</style>
 
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  margin-bottom: 28px;
+  color: rgba(255,255,255,0.9);
+}
+
+.video-container {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video-container iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 </head>
+
 <body>
 
-<div class="video-container">
+<div class="wrapper">
 
-<div style="position:relative;padding-top:56.25%;">
-  <iframe
-    src="https://player.mediadelivery.net/embed/670054/3d0d285d-57a4-4715-8a6a-66dd5500a4dd?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
-    loading="lazy"
-    style="border:0;position:absolute;top:0;height:100%;width:100%;"
-    allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;fullscreen;"
-    allowfullscreen="true">
-  </iframe>
-</div>
+  <div class="title">
+    EMANUELE DI BACCO · DIGITAL COMPOSITOR · SHOWREEL 2026 (2Q)
+  </div>
+
+  <div class="video-container">
+    <iframe
+      src="https://player.mediadelivery.net/embed/670054/3d0d285d-57a4-4715-8a6a-66dd5500a4dd?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+      loading="lazy"
+      allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;fullscreen;"
+      allowfullscreen="true">
+    </iframe>
+  </div>
 
 </div>
 
